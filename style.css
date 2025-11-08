@@ -160,9 +160,12 @@ h3 { font-size: 1.8em; }
 
 .trailer-container iframe {
     max-width: 900px;
-    height: 50vw; /* Responsive height */
+    /*height: 50vw; /* Responsive height */
     min-height: 250px;
     margin: 20px 0;
+    aspect-ratio: 16/9;
+    height:auto;
+    max-width: 900px;
 }
 
 .video-note {
@@ -314,6 +317,7 @@ footer h2 {
     }
 
 }
+
 
 
 
