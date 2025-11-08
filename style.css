@@ -114,7 +114,7 @@ h3 { font-size: 1.8em; }
 /* --- HERO SECTION --- */
 .hero-section {
     /* Placeholder: Replace with actual image URL for the game board banner */
-    background-image: url('../assets/img/board_banner.jpg'); 
+    background-image: url('./assets/img/board_banner.jpg'); 
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full viewport height */
@@ -314,3 +314,4 @@ footer h2 {
     }
 
 }
+
