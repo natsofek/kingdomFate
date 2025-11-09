@@ -212,11 +212,14 @@ h3 { font-size: 1.8em; }
 
 .component-gallery img {
     width: 100%;
-    height: auto;
+    height: 120px;
     max-width: 150px;
     display: block;
     margin: 0 auto 10px auto;
     border: 1px solid var(--color-primary);
+
+    object-fit: cover;
+    object-position: center;
     /* Placeholder for generated AI images */
     content: url('[PLACEHOLDER_ICON_COMPONENTS]'); 
 }
@@ -318,6 +321,7 @@ footer h2 {
     }
 
 }
+
 
 
 
