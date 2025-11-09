@@ -262,7 +262,11 @@ h3 { font-size: 1.8em; }
     background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 50%);
     z-index: 1;
 }
-
+/* Add this new rule to your style.css */
+.component-gallery .card-large {
+    flex: 1 1 400px; /* Wider preferred width */
+    height: 600px;  /* Taller to prevent extreme vertical compression */
+}
 
 
 
@@ -363,6 +367,7 @@ footer h2 {
     }
 
 }
+
 
 
 
