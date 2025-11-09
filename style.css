@@ -203,9 +203,9 @@ h3 { font-size: 1.8em; }
 }
 
 .component-gallery figure {
-    flex: 1 1 200px; /* Base size for each cell */
+    flex: 1 1 400px; /* Base size for each cell */
     position: relative; /* CRITICAL: Allows absolute positioning of the caption */
-    height: 200px; /* CRITICAL: Define a fixed height for the entire cell */
+    height: 400px; /* CRITICAL: Define a fixed height for the entire cell */
     text-align: center;
     z-index: 0;
     
@@ -363,6 +363,7 @@ footer h2 {
     }
 
 }
+
 
 
 
