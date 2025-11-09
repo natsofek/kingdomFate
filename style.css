@@ -203,15 +203,25 @@ h3 { font-size: 1.8em; }
 }
 
 .component-gallery figure {
-    flex: 1 1 200px; /* Allows up to 5 items on one large row */
+    flex: 1 1 200px; /* Base size for each cell */
+    position: relative; /* CRITICAL: Allows absolute positioning of the caption */
+    height: 200px; /* CRITICAL: Define a fixed height for the entire cell */
     text-align: center;
-    background-color: #252a33;
-    padding: 0px;
-    margin: 0px;
+    
+    background-color: #252a33; /* Fallback background if image fails */
+    background-size: cover;    /* Make the background image fill the figure */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    
+    padding: 0; 
+    margin: 0;  
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden; 
+    
+    display: flex; /* Use flex to push caption to bottom */
+    flex-direction: column; /* Stack caption below if not absolute */
+    justify-content: flex-end; /* Pushes content (caption) to the bottom */
 }
-
 
 
 .component-gallery img {
@@ -227,24 +237,36 @@ h3 { font-size: 1.8em; }
     content: url('[PLACEHOLDER_ICON_COMPONENTS]'); 
 }
 .component-gallery figure figcaption {
-    background-color: transparent; /* Ensure the caption itself doesn't have a background */
-    color: var(--color-light);     /* White text */
-    padding: 10px 5px;             /* Add padding for text spacing */
+    position: absolute; /* CRITICAL: Position relative to the figure */
+    bottom: 0;          /* Aligns to the bottom of the figure */
+    left: 0;
+    width: 100%;        /* Extends across the full width */
+    
+    background-color: rgba(160, 140, 92, 0.8); /* Your gold/bronze primary color with 80% opacity */
+    color: var(--color-secondary); /* Dark text for readability on the light background */
+    
+    padding: 10px 5px;             
     font-size: 0.9em;
+    font-weight: bold; /* Make text stand out more */
     text-align: center;
+    
+    /* Ensure text is above the background image */
+    z-index: 2; 
 }
 
-/* In style.css */
-.component-gallery figure img {
-    width: 100%;        
-    height: 100%;      /* REDUCED HEIGHT: Use a smaller fixed height (e.g., 100px) to prevent severe vertical stretching and pixelation. */
-    display: block;
-    margin: 0;          
-    border: none;       
-    
-    object-fit: cover;  /* Keep 'cover' to fill horizontally, but the reduced height limits vertical stretch. */
-    object-position: center center; /* Ensure the image is centered both horizontally and vertically within the 100px space. */
+/* Optional: Add a subtle overlay for better text contrast if needed */
+.component-gallery figure::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 50%);
+    z-index: 1;
 }
+
+
 
 
 /* --- GAMEPLAY SECTION --- */
@@ -344,6 +366,7 @@ footer h2 {
     }
 
 }
+
 
 
 
