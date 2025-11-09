@@ -20,6 +20,9 @@ body {
     background-color: var(--color-secondary);
     line-height: 1.6;
     scroll-behavior: smooth;
+
+    .dark-bg {
+        background-color: #1a1e27;
 }
 
 .container {
@@ -373,6 +376,7 @@ footer h2 {
     }
 
 }
+
 
 
 
