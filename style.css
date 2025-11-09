@@ -237,7 +237,7 @@ h3 { font-size: 1.8em; }
 /* In style.css */
 .component-gallery figure img {
     width: 100%;        
-    height: 100px;      /* REDUCED HEIGHT: Use a smaller fixed height (e.g., 100px) to prevent severe vertical stretching and pixelation. */
+    height: 100%;      /* REDUCED HEIGHT: Use a smaller fixed height (e.g., 100px) to prevent severe vertical stretching and pixelation. */
     display: block;
     margin: 0;          
     border: none;       
@@ -344,6 +344,7 @@ footer h2 {
     }
 
 }
+
 
 
 
