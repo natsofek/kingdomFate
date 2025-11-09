@@ -212,6 +212,8 @@ h3 { font-size: 1.8em; }
     overflow: hidden;
 }
 
+
+
 .component-gallery img {
     width: 100%;
     height: 120px;
@@ -231,6 +233,18 @@ h3 { font-size: 1.8em; }
     padding: 10px 5px;             /* Add padding for text spacing */
     font-size: 0.9em;
     text-align: center;
+}
+
+/* In style.css */
+.component-gallery figure img {
+    width: 100%;        
+    height: 100px;      /* REDUCED HEIGHT: Use a smaller fixed height (e.g., 100px) to prevent severe vertical stretching and pixelation. */
+    display: block;
+    margin: 0;          
+    border: none;       
+    
+    object-fit: cover;  /* Keep 'cover' to fill horizontally, but the reduced height limits vertical stretch. */
+    object-position: center center; /* Ensure the image is centered both horizontally and vertically within the 100px space. */
 }
 
 
@@ -331,6 +345,7 @@ footer h2 {
     }
 
 }
+
 
 
 
