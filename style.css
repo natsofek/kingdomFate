@@ -225,6 +225,14 @@ h3 { font-size: 1.8em; }
     /* Placeholder for generated AI images */
     content: url('[PLACEHOLDER_ICON_COMPONENTS]'); 
 }
+.component-gallery figure figcaption {
+    background-color: transparent; /* Ensure the caption itself doesn't have a background */
+    color: var(--color-light);     /* White text */
+    padding: 10px 5px;             /* Add padding for text spacing */
+    font-size: 0.9em;
+    text-align: center;
+}
+
 
 /* --- GAMEPLAY SECTION --- */
 .dynamics, .dilemmas {
@@ -323,6 +331,7 @@ footer h2 {
     }
 
 }
+
 
 
 
