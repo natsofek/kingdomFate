@@ -21,10 +21,6 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
 
-    .dark-bg {
-        background-color: #1a1e27;
-}
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -385,6 +381,7 @@ footer h2 {
     }
 
 }
+
 
 
 
