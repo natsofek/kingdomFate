@@ -207,6 +207,7 @@ h3 { font-size: 1.8em; }
     position: relative; /* CRITICAL: Allows absolute positioning of the caption */
     height: 200px; /* CRITICAL: Define a fixed height for the entire cell */
     text-align: center;
+    z-index: 0;
     
     background-color: #252a33; /* Fallback background if image fails */
     background-size: cover;    /* Make the background image fill the figure */
@@ -243,7 +244,7 @@ h3 { font-size: 1.8em; }
     width: 100%;        /* Extends across the full width */
     
     background-color: rgba(160, 140, 92, 0.8); /* Your gold/bronze primary color with 80% opacity */
-    color: var(--color-secondary); /* Dark text for readability on the light background */
+    color: #000; /* Dark text for readability on the light background */
     
     padding: 10px 5px;             
     font-size: 0.9em;
@@ -251,7 +252,7 @@ h3 { font-size: 1.8em; }
     text-align: center;
     
     /* Ensure text is above the background image */
-    z-index: 2; 
+    z-index: 10; 
 }
 
 /* Optional: Add a subtle overlay for better text contrast if needed */
@@ -366,6 +367,7 @@ footer h2 {
     }
 
 }
+
 
 
 
