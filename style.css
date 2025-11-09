@@ -352,6 +352,17 @@ footer h2 {
     color: #888;
 }
 
+    /* Add this rule to ensure all standard content sections are dark */
+.content-section {
+    padding: 60px 0;
+    /* NEW: Apply the darker background color to all content sections */
+    background-color: #1a1e27; 
+}
+
+
+
+    
+
 /* --- MEDIA QUERIES (Responsiveness) --- */
 
 /* Tablet and larger screens */
@@ -376,23 +387,6 @@ footer h2 {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
